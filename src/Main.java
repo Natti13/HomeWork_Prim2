@@ -3,22 +3,23 @@
 public class Main {
     public static void main(String[] args) {
 
-        int score;
-        score = 100;
+        int score = 100;
         int sumRecharge = 1500;
         int bonusScore;
-        int percent = 1;
+        int totalScore;
 
         if (sumRecharge > 1000) {
-            bonusScore = sumRecharge * percent;
+            bonusScore = sumRecharge / 100;
+            totalScore = score + sumRecharge + bonusScore;
         } else {
+            totalScore = score + sumRecharge;
             bonusScore = 0;
-            score = score + sumRecharge;
-        }
+                    }
         String nameScore = "Счет = ";
-        System.out.println(nameScore + (score + bonusScore));
+        System.out.println(nameScore + totalScore);
         String nameBonusScore = "Количество бонусов = ";
-        System.out.println(nameBonusScore + bonusScore);
+        System.out.println(nameBonusScore + bonusScore );
+
 
 
     }
