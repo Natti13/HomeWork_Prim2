@@ -20,7 +20,5 @@ public class Main {
         String nameBonusScore = "Количество бонусов = ";
         System.out.println(nameBonusScore + bonusScore );
 
-
-
     }
 }
